@@ -2,14 +2,14 @@
 	"name": "generate-resource-dart-code",
 	"displayName": "generate-resource-dart-code",
 	"description": "This is a vscode plugin for flutter projects to convert images and svgs in the resource folder to dart code",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"publisher": "swordjs",
 	"icon": "media/sword-logo.png",
 	"repository": {
 		"url": "https://github.com/swordjs/generate-resource-dart-code"
 	},
 	"engines": {
-		"vscode": "^1.72.0"
+		"vscode": "^1.70.0"
 	},
 	"categories": [
 		"Other"
@@ -39,7 +39,7 @@
 		"@types/glob": "^8.0.0",
 		"@types/mocha": "^10.0.0",
 		"@types/node": "16.x",
-		"@types/vscode": "^1.72.0",
+		"@types/vscode": "1.70.0",
 		"@typescript-eslint/eslint-plugin": "^5.38.1",
 		"@typescript-eslint/parser": "^5.38.1",
 		"@vscode/test-electron": "^2.1.5",
