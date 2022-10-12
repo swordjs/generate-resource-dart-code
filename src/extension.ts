@@ -32,10 +32,17 @@ const handleFile = (file: vscode.Uri): { fileNameCamel?: string; fileFormatCamel
 		?.split('.')
 		.pop()
 		?.replace(/^\S/, (s) => s.toUpperCase());
-	// 判断name是否是下划线命名或者-命名, 如果是_或者-命名, 就转换成驼峰命名, 如果存在空格, 就去掉空格
+	// 判断name是否是下划线命名或者-命名, 如果是_或者-命名, 就转换成驼峰命名, 如果存在空格, 就去掉空格, 如果首字母是大写就转换成小写
 	const fileNameCamel = fileName
 		?.replace(/\s/g, '')
-		.replace(/[_-]\S/g, (s) => s.slice(1).toUpperCase());
+		.replace(/^\S/, (s) => s.toLowerCase())
+		.replace(/[_-]\S/g, (s) => {
+			// 判断s是否是数字, 如果是数字(包括0)不用转换
+			if (Number(s[1]) || s[1] === '0') {
+				return s;
+			}
+			return s.slice(1).toUpperCase();
+		});
 	return {
 		fileNameCamel,
 		fileFormatCamel

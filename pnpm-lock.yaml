@@ -8,10 +8,14 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.38.1
   '@typescript-eslint/parser': ^5.38.1
   '@vscode/test-electron': ^2.1.5
+  Blob: ^0.10.0
   eslint: ^8.24.0
   glob: ^8.0.3
   mocha: ^10.0.0
   typescript: ^4.8.4
+
+dependencies:
+  Blob: 0.10.0
 
 devDependencies:
   '@types/glob': 8.0.0
@@ -259,6 +263,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /Blob/0.10.0:
+    resolution: {integrity: sha512-tnjjeVgT1KxdipkamZYhXSjerkOIMpJdVA/cQH8ZDBOhfTA2uCVx9++9ZpAZmSybAf1HWphtlQ1uH213PwUvHQ==}
+    dev: false
 
   /acorn-jsx/5.3.2_acorn@8.8.0:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
