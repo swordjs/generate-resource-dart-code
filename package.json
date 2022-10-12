@@ -2,7 +2,7 @@
 	"name": "generate-resource-dart-code",
 	"displayName": "generate-resource-dart-code",
 	"description": "",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.72.0"
 	},
@@ -11,7 +11,10 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": []
+		"commands": [{
+			"command": "extension.generateResourceDartCode",
+			"title": "Generate Resource Dart Code"
+		}]
 	},
 	"activationEvents": ["*"],
 	"scripts": {
