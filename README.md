@@ -1,6 +1,6 @@
 # generate-resource-dart-code
 
-[中文](https://github.com/seho-code-life/generate-resource-dart-code/blob/main/README-CN.md)
+[中文](https://github.com/swordjs/generate-resource-dart-code/blob/main/README-CN.md)
 
 This is a vscode plugin for flutter projects to convert images and svgs in the resource folder to dart code
 

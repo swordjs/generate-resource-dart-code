@@ -1,6 +1,6 @@
 # generate-resource-dart-code
 
-[English](https://github.com/seho-code-life/generate-resource-dart-code/blob/main/README.md)
+[English](https://github.com/swordjs/generate-resource-dart-code/blob/main/README.md)
 
 这是一个用于flutter项目把资源文件夹中的images以及svgs转换为dart code的vscode插件
 
